@@ -1,0 +1,56 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "liyinchideMacBook-Pro.local",
+    "children" : [ {
+      "name" : "67036-MainThread",
+      "children" : [ {
+        "name" : "test_baidu_search[http://www.baidu.com-百度搜索]",
+        "uid" : "181f835f5909a76b",
+        "parentUid" : "1cefff2d56b7482b70f8a8f2081e3b07",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642926907990,
+          "stop" : 1642926907990,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'百度搜索'", "'http://www.baidu.com'" ]
+      } ],
+      "uid" : "1cefff2d56b7482b70f8a8f2081e3b07"
+    }, {
+      "name" : "68591-MainThread",
+      "children" : [ {
+        "name" : "test_baidu_search[http://www.bing.com-必应搜索]",
+        "uid" : "8c3b22f25da5ce0e",
+        "parentUid" : "a4a0052e1991a947ae81221c93247620",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642927098653,
+          "stop" : 1642927098683,
+          "duration" : 30
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'必应搜索'", "'http://www.bing.com'" ]
+      }, {
+        "name" : "test_baidu_search[http://www.baidu.com-百度搜索]",
+        "uid" : "50b97a59c9977af9",
+        "parentUid" : "a4a0052e1991a947ae81221c93247620",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642927009854,
+          "stop" : 1642927098646,
+          "duration" : 88792
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'百度搜索'", "'http://www.baidu.com'" ]
+      } ],
+      "uid" : "a4a0052e1991a947ae81221c93247620"
+    } ],
+    "uid" : "5acda4e65abf6ff593522535515c7532"
+  } ]
+}

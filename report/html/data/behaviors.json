@@ -1,0 +1,31 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "test_baidu_search[http://www.baidu.com-百度搜索]",
+    "uid" : "50b97a59c9977af9",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1642927009854,
+      "stop" : 1642927098646,
+      "duration" : 88792
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "'百度搜索'", "'http://www.baidu.com'" ]
+  }, {
+    "name" : "test_baidu_search[http://www.bing.com-必应搜索]",
+    "uid" : "8c3b22f25da5ce0e",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1642927098653,
+      "stop" : 1642927098683,
+      "duration" : 30
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "'必应搜索'", "'http://www.bing.com'" ]
+  } ]
+}

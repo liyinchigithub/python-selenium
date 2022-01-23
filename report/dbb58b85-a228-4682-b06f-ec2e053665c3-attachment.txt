@@ -1,0 +1,5 @@
+[32mINFO    [0m WDM:logger.py:26 
+
+[32mINFO    [0m WDM:logger.py:26 ====== WebDriver manager ======
+[32mINFO    [0m WDM:logger.py:26 Current google-chrome version is 97.0.4692
+[32mINFO    [0m WDM:logger.py:26 Get LATEST chromedriver version for 97.0.4692 google-chrome

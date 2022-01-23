@@ -1,0 +1,1 @@
+{"uuid": "e42d238f-a3b8-4864-8d26-f092373968a2", "befores": [{"name": "xunit_setup_function_fixture_test_selenium", "status": "passed", "start": 1642927009853, "stop": 1642927009853}], "afters": [{"name": "xunit_setup_function_fixture_test_selenium::0", "status": "passed", "start": 1642927098649, "stop": 1642927098649}], "start": 1642927009853, "stop": 1642927098649}

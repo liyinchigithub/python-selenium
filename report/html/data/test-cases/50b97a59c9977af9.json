@@ -1,0 +1,65 @@
+{
+  "uid" : "50b97a59c9977af9",
+  "name" : "test_baidu_search[http://www.baidu.com-百度搜索]",
+  "fullName" : "test_selenium#test_baidu_search",
+  "historyId" : "be9fb43342adcea9a2a0b7c6e951dc63",
+  "time" : {
+    "start" : 1642927009854,
+    "stop" : 1642927098646,
+    "duration" : 88792
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "test_selenium"
+  }, {
+    "name" : "host",
+    "value" : "liyinchideMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "68591-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_selenium"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "search_text",
+    "value" : "'百度搜索'"
+  }, {
+    "name" : "url",
+    "value" : "'http://www.baidu.com'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "181f835f5909a76b",
+      "status" : "broken",
+      "statusDetails" : "requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))",
+      "time" : {
+        "start" : 1642926907990,
+        "stop" : 1642926907990,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "50b97a59c9977af9.json",
+  "parameterValues" : [ "'百度搜索'", "'http://www.baidu.com'" ]
+}

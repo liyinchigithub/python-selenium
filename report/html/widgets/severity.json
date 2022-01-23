@@ -1,0 +1,21 @@
+[ {
+  "uid" : "50b97a59c9977af9",
+  "name" : "test_baidu_search[http://www.baidu.com-百度搜索]",
+  "time" : {
+    "start" : 1642927009854,
+    "stop" : 1642927098646,
+    "duration" : 88792
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8c3b22f25da5ce0e",
+  "name" : "test_baidu_search[http://www.bing.com-必应搜索]",
+  "time" : {
+    "start" : 1642927098653,
+    "stop" : 1642927098683,
+    "duration" : 30
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]
