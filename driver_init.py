@@ -55,8 +55,8 @@ class DriverConfig:
         else:    
             driverpath = './chromedriver/chromedriver'
         # 浏览器驱动
-        # self.driver = webdriver.Chrome(driverpath, options=options, desired_capabilities=des)# 运行本地chrome
-        self.driver = webdriver.Remote(command_executor="http://10.224.2.98:4444/wd/hub", desired_capabilities=des,options=options)# 运行远程chrome
+        self.driver = webdriver.Chrome(driverpath, options=options, desired_capabilities=des)# 运行本地chrome
+        # self.driver = webdriver.Remote(command_executor="http://10.224.2.98:4444/wd/hub", desired_capabilities=des,options=options)# 运行远程chrome
         implicitly_wait = 60000
         self.driver.implicitly_wait(implicitly_wait)
         
