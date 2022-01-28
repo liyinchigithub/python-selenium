@@ -35,7 +35,7 @@ pytest src/package/module/test_selenium.py
 ## 仅运行指定标志的用例
 ```shell
 # 运行标注@pytest.mark.test的测试用例
-pytest -m baidu
+pytest -m test
 ```
 ## 控制台详细输出
 
