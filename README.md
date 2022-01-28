@@ -9,8 +9,8 @@
 ----__init__.py         模块初始化
 ----test_selenium.py    模块
 -download_file          下载文件存放路径，通过chromeOptions capability设置
--save_images            webdriver截图保存图片路径
--conftest               初始化
+-save_images            webdriver 截图保存图片路径
+-driver_init.py         webdriver 初始化(本地、远程、chromeoptions参数配置)
 -report                 allure生成json、html报告存放位置
 -pytest.ini             pytest单元测试框架配置文件
 -requirements.txt       依赖

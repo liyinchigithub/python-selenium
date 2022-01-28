@@ -79,7 +79,10 @@ def teardown_method():
 
 def setup_module():
     print("teardown_module():每个模块（文件）之后执行")
-
+    
+def teardown_module():
+    driver.close()
+    print("teardown_module():每个模块（文件）之后执行")
 
 data = [("http://www.baidu.com", "百度搜索"), ("http://www.bing.com", "必应搜索")]
 '''
