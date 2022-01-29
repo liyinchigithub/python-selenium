@@ -48,48 +48,44 @@ driver=driver_init.DriverConfig.driver_config(webdriver)
 '''
 
 
-
+# 每个模块（文件）之前执行
 def setup_module():
     print("teardown_module():每个模块（文件）之前执行")
 
-
+# 每个类之前执行
 def setup_class():
     print("setup_class():每个类之前执行")
 
-
+# 每个类之后执行
 def teardown_class():
     print("teardown_class():每个类之后执行")
 
-
+# 每个方法之前执行
 def setup_function():
     print("setup_function():非类中的方法，每个方法之前执行")
 
-
+# 每个方法之后执行
 def teardown_function():
     print("teardown_function():非类中的方法，每个方法之后执行")
 
-
+# 类中的方法，每个方法之前执行
 def setup_method():
     print("setup_method():类中的方法，每个方法之前执行")
 
-
+# 类中的方法，每个方法之后执行
 def teardown_method():
     print("teardown_method():类中的方法，每个方法之后执行")
 
-
-def setup_module():
-    print("teardown_module():每个模块（文件）之后执行")
-    
+# 每个模块（文件）之后执行
 def teardown_module():
     driver.close()
     print("teardown_module():每个模块（文件）之后执行")
 
+# 参数化数据
 data = [("http://www.baidu.com", "百度搜索"), ("http://www.bing.com", "必应搜索")]
 '''
     DDT 数据驱动（参数化）
 '''
-
-
 @pytest.mark.parametrize("url,search_text", data)
 def test_baidu_search(url, search_text):
     driver.maximize_window()
@@ -114,10 +110,8 @@ def test_baidu_search(url, search_text):
 
 
 '''
-    跳过
+    跳过的测试用例c
 '''
-
-
 @pytest.mark.skip
 @pytest.mark.smoke
 def test_bing_search():
@@ -135,10 +129,8 @@ def test_bing_search():
 
 
 '''
-    截图保存本地
+    selenium 截图保存本地
 '''
-
-
 def save_screenshot():
     now_time = time.strftime('%Y-%m-%d %H:%M:%S')
     if driver.get_screenshot_as_file('./save_images/%s.png' % now_time):
