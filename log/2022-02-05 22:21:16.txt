@@ -1,0 +1,14 @@
+2022-02-05 22:21:17,063 - logging_init - INFO - teardown_module():每个模块（文件）之前执行
+2022-02-05 22:21:17,075 - logging_init - INFO - setup_function():非类中的方法，每个方法之前执行
+2022-02-05 22:21:30,164 - logging_init - INFO - <bound method WebDriver.get_screenshot_as_png of <selenium.webdriver.chrome.webdriver.WebDriver (session="0bd34a5f6e840e80f8808be38a818ac1")>>
+2022-02-05 22:21:31,706 - logging_init - INFO - 保存成功
+2022-02-05 22:21:31,706 - logging_init - INFO - 测试数据为http://www.baidu.com
+2022-02-05 22:21:31,706 - logging_init - INFO - 测试数据为百度搜索
+2022-02-05 22:21:31,707 - logging_init - INFO - teardown_function():非类中的方法，每个方法之后执行
+2022-02-05 22:21:31,709 - logging_init - INFO - setup_function():非类中的方法，每个方法之前执行
+2022-02-05 22:21:44,395 - logging_init - INFO - <bound method WebDriver.get_screenshot_as_png of <selenium.webdriver.chrome.webdriver.WebDriver (session="0bd34a5f6e840e80f8808be38a818ac1")>>
+2022-02-05 22:21:44,747 - logging_init - INFO - 保存成功
+2022-02-05 22:21:44,748 - logging_init - INFO - 测试数据为http://www.bing.com
+2022-02-05 22:21:44,748 - logging_init - INFO - 测试数据为必应搜索
+2022-02-05 22:21:44,748 - logging_init - INFO - teardown_function():非类中的方法，每个方法之后执行
+2022-02-05 22:21:44,903 - logging_init - INFO - teardown_module():每个模块（文件）之后执行
