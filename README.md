@@ -239,10 +239,259 @@ driver.
 driver.
 ```
 
+# 获取元素信息
+
 * 
 ```python
 driver.
 ```
+
+# 鼠标操作
+
+* 
+```python
+driver.
+```
+
+
+# 按键操作
+
+* 
+```python
+driver.
+```
+
+
+# 表单控件
+
+## 复选框
+* 
+```python
+driver.
+```
+
+## 链接
+* 
+```python
+driver.
+```
+
+## select下拉列表
+* 
+```python
+driver.
+```
+
+## input下拉列表
+* 
+```python
+driver.
+```
+
+## 表格
+* 
+```python
+driver.
+```
+
+## frame 框架
+* 
+```python
+driver.
+```
+
+## JavaScript 弹窗
+* 
+```python
+driver.
+```
+
+## 非JavaScript 弹窗
+* 
+```python
+driver.
+```
+
+## 文件下载
+* 
+```python
+driver.
+```
+
+## 文件上传
+* 
+```python
+driver.
+```
+
+# selenium高级应用
+
+## 复杂控件的操作
+
+### Ajax选项
+
+* 
+```python
+driver.
+```
+### 操作富文本编辑器
+* 
+```python
+driver.
+```
+### 滑动滑块操作
+* 
+```python
+driver.
+```
+
+## webdriver特殊操作
+
+### 
+* 
+```python
+driver.
+```
+
+### 元素class值包含空格
+* 
+```python
+driver.
+```
+
+### property、attribute、text的区别
+* 
+```python
+driver.
+```
+* 
+```python
+driver.
+```
+* 
+```python
+driver.
+```
+
+### 操作cookie
+* 
+```python
+driver.
+```
+
+### 截图
+* 
+```python
+driver.
+```
+
+### 定位动态id
+* 
+```python
+driver.
+```
+
+### 获取焦点元素
+* 
+```python
+driver.
+```
+
+### 颜色验证
+* 
+```python
+driver.
+```
+
+## JavaScript应用
+* 
+```python
+driver.
+```
+
+### 操作页面元素
+* 
+```python
+driver.
+```
+
+### 修改页面元素属性
+* 
+```python
+driver.
+```
+
+### 操作滚动条
+* 
+```python
+driver.
+```
+
+### 高亮显示正在被操作的页面元素
+* 
+```python
+driver.
+```
+
+### 操作span类型元素
+* 
+```python
+driver.
+```
+
+# 浏览器定制启动参数
+* 
+```python
+driver.
+```
+
+# AutoIt的应用
+* 
+```python
+driver.
+```
+
+# 重要异常
+* 
+```python
+driver.
+```
+
+# selenium等待机制
+
+## 影响元素加载的外部因素
+* 
+```python
+driver.
+```
+## 强制等待
+* 
+```python
+driver.
+```
+
+## 隐性等待
+* 
+```python
+driver.
+```
+
+## 显性等待
+* 
+```python
+driver.
+```
+
+# 线性测试脚本
+
+## Redmine系统
+
+Redmine是一个项目管理和曲线跟踪系统，其功能和我们常见的项目管理、缺陷跟踪系统诶西。
+* 
+```python
+driver.
+```
+
 
 
 ## 参考
