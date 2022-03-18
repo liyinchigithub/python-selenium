@@ -3,18 +3,18 @@
 >该项目能够快速熟悉复习selenium webdriver
 
 # 目录说明
--src                    代码
---package               顶包
----module               模块（package包下的模块）
-----__init__.py         模块初始化
-----test_selenium.py    模块
--download_file          下载文件存放路径，通过chromeOptions capability设置
--save_images            webdriver 截图保存图片路径
--webdriver_init.py      webdriver 初始化(本地、远程、chromeoptions参数配置)
--logging_init.py        logging 初始化(日志初始化配置，每次触发写入本地文件和控制台)
--report                 allure生成json、html报告存放位置
--pytest.ini             pytest单元测试框架配置文件
--requirements.txt       依赖
+* -src                    代码
+* --package               顶包
+* ---module               模块（package包下的模块）
+* ----__init__.py         模块初始化
+* ----test_selenium.py    模块
+* -download_file          下载文件存放路径，通过chromeOptions capability设置
+* -save_images            webdriver 截图保存图片路径
+* -webdriver_init.py      webdriver 初始化(本地、远程、chromeoptions参数配置)
+* -logging_init.py        logging 初始化(日志初始化配置，每次触发写入本地文件和控制台)
+* -report                 allure生成json、html报告存放位置
+* -pytest.ini             pytest单元测试框架配置文件
+* -requirements.txt       依赖
 
 ## 安装依赖
 
