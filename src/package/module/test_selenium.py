@@ -138,7 +138,26 @@ def test_bing_search():
     # 截图-保存本地
     save_screenshot()
 
-
+'''
+    文件下载
+'''
+@pytest.mark.test
+@pytest.mark.smoke
+def test_file_download():
+    print()
+    
+'''
+    文件上传
+'''
+@pytest.mark.test
+@pytest.mark.smoke
+def test_file_upload():
+    print()
+    
+      
+    
+    
+    
 '''
     selenium 截图保存本地
 '''
