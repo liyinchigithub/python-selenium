@@ -1,0 +1,6 @@
+2022-03-18 22:52:15,773 - logging_init - INFO - teardown_module():每个模块（文件）之前执行
+2022-03-18 22:52:28,394 - logging_init - INFO - <bound method WebDriver.get_screenshot_as_png of <selenium.webdriver.chrome.webdriver.WebDriver (session="a7dd525787ee0e7d6a64888330502180")>>
+2022-03-18 22:52:28,665 - logging_init - INFO - 保存成功
+2022-03-18 22:52:28,665 - logging_init - INFO - 测试数据为http://www.baidu.com
+2022-03-18 22:52:28,665 - logging_init - INFO - 测试数据为百度搜索
+2022-03-18 22:59:32,885 - logging_init - INFO - <bound method WebDriver.get_screenshot_as_png of <selenium.webdriver.chrome.webdriver.WebDriver (session="a7dd525787ee0e7d6a64888330502180")>>

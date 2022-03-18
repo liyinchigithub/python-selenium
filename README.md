@@ -1,5 +1,7 @@
 # python-selenium
 
+[![python](https://img.shields.io/badge/python-3.7-green.svg)](https://www.python.org/downloads/release/python-374/) [![pip](https://img.shields.io/badge/pip-22.0.4-yellow.svg)](https://pip.pypa.io/en/stable/)[![selenium](https://img.shields.io/badge/selenium-v4.1.0-blue.svg)](https://pypi.org/project/selenium/)
+
 >该项目能够快速熟悉复习selenium webdriver
 
 # 目录说明
@@ -72,6 +74,174 @@ pytest -s -q --alluredir ./report
 ### 执行命令（生成html报告）
 ```shell
 allure generate ./report -o ./report/html
+```
+
+# selenium常用方法和属性
+
+* 实例化
+```python
+form selenium import webdriver
+driver=webdriver.Chrome()
+```
+
+* 打开、关闭、退出浏览器
+```python
+webdriver.Chrome()
+webdriver.Firfox()
+
+driver.close()
+driver.quit()
+```
+
+* 访问网页
+```python
+driver.get("https://www.baidu.com")
+```
+* 网页后退、前进
+
+访问多个不同域名或者路由地址后，可操作性
+```python
+driver.back()
+driver.forward()
+```
+
+* 等待
+```python
+from time import sleep
+sleep(2)# 等待2秒
+```
+
+* 刷新浏览器页面
+```python
+driver.refresh()
+```
+
+* 窗口操作
+```python
+    driver.maximize_window() # 窗口最大化
+    driver.minimize_window()# 窗口最小化
+    driver.fullscreen_window()# 窗口全屏
+
+    driver.get_window_size() # 获取窗口大小
+    driver.set_window_size(500,500)# 设置窗口大小
+    driver.set_window_position(0,0) # 设置窗口位置
+    driver.get_window_position() # 获取窗口位置
+```
+
+* 网页标题（属性）
+```python
+driver.title # 网页当前标题
+driver.name # 当前实例浏览器名称
+
+```
+
+* 获取当前网页地址（属性）
+```python
+driver.current_url
+```
+
+* 获取网页源码
+```python
+driver.page_source
+```
+
+* 多窗口操作
+```python
+handle_all=driver.window_handles # 获取所有窗口句柄
+handle=driver.current_window_handle # 获取当前窗口句柄 (存储原始窗口句柄)
+driver.switch_to.window(handle) # 切换到指定句柄窗口
+driver.switch_to.window(handle_all[0]) # 切换到指定句柄窗口
+
+assert len(driver.window_handles)==1 # 检查当前有没有其他开启的窗口
+
+wait.until(EC.number_of_windows_to_be(2))# 等待打开两个窗口
+
+# 遍历循环，找到新的窗口（存储当前所有窗口A=》打开新窗口=》获取当前所有窗口B 并遍历A和B差异）新窗口索引位置一般在最后一个？？？
+
+```
+
+* 多窗口操作（selenium 4）
+```python
+driver.switch_to.new_window('tab') # 打开一个新标签时，并自动切换到新标签
+driver.switch_to.new_window('window')# 打开一个新窗口时，并自动切换到新窗口
+```
+
+* 切换焦点
+```python
+driver.switch_to_alert() # 切换到弹窗
+driver.switch_to_default_content() # 切换焦点到主窗口（相对iframe/frame来说）
+```
+
+* 切换到iframe 或frame
+```python
+driver.switch_to_frame(参数可以是frame的索引、名称或者元素) # 切换到frame或iframe
+```
+
+* 隐性等待
+```python
+driver.implicity_wait(10) # 等待10秒
+```
+
+* 设置页面完全加载完 超时时间
+```python
+driver.set_page_load_timeout(10)# 10秒
+```
+
+* 设置脚本执行的 超时时间
+```python
+driver.set_script_timeout(10)# 10秒
+```
+
+# selenium元素定位方法
+
+* 
+```python
+driver.
+```
+
+* 
+```python
+driver.
+```
+
+* 
+```python
+driver.
+```
+
+* 
+```python
+driver.
+```
+
+* 
+```python
+driver.
+```
+
+* 
+```python
+driver.
+```
+
+* 
+```python
+driver.
+```
+
+* 
+```python
+driver.
+```
+
+* 
+```python
+driver.
+```
+
+* 
+```python
+driver.
 ```
 
 

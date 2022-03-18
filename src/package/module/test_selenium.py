@@ -65,7 +65,7 @@ def setup_class():
 # 每个类之后执行
 def teardown_class():
     logger.info("teardown_class():每个类之后执行")
-
+'''
 # 每个方法之前执行
 def setup_function():
     logger.info("setup_function():非类中的方法，每个方法之前执行")
@@ -73,7 +73,7 @@ def setup_function():
 # 每个方法之后执行
 def teardown_function():
     logger.info("teardown_function():非类中的方法，每个方法之后执行")
-
+'''
 # 类中的方法，每个方法之前执行
 def setup_method():
     logger.info("setup_method():类中的方法，每个方法之前执行")
@@ -95,6 +95,11 @@ data = [("http://www.baidu.com", "百度搜索"), ("http://www.bing.com", "必�
 @pytest.mark.parametrize("url,search_text", data)
 def test_baidu_search(url, search_text):
     driver.maximize_window()
+    driver.get_window_size()
+    driver.set_window_size(500,500)
+    driver.set_window_position(800,800)
+    driver.get_window_position()
+
     driver.get(url)
     try:
         if("baidu" in url):

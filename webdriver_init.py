@@ -9,7 +9,7 @@ from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from webdriver_manager.chrome import ChromeDriverManager  # 自动更新下载chromedriver
 from selenium.webdriver import Remote # 运行远程服务器webdriver
 import platform;
-# driver = webdriver.Chrome(ChromeDriverManager().install())# 自动更新下载chromedriver
+driver = webdriver.Chrome(ChromeDriverManager().install())# 自动更新下载chromedriver
 # driver = webdriver.Chrome("./chromedriver/chromedriver")# 手动指定chromedriver
 
 
@@ -44,19 +44,22 @@ class DriverConfig:
         # 获取谷歌浏览器所有控制台信息
         des = DesiredCapabilities.CHROME
         des['loggingPrefs'] = {'performance': 'ALL'}
-        # 浏览器驱动
-        # 通过global关键字表示我在函数里面的这个变量是使用的全局那个
+        # 浏览器驱动（使用自动更新下载chromedriver）
         self.driver =webdriver.Chrome(ChromeDriverManager().install(
         ), options=options, desired_capabilities=options.to_capabilities())
+        # 远程机器
+        # self.driver = webdriver.Remote(command_executor="http://10.224.2.98:4444/wd/hub", desired_capabilities=des,options=options)
+        '''
+        手动指定chromedriver（使用本地手动下载chromedriver）
         # 谷歌浏览器驱动路径
-        # 判断当前系统
-        if(platform.system()=='Windows'):
+        if(platform.system()=='Windows'): # 判断当前系统
             driverpath = './chromedriver/chromedriver.exe'
         else:    
             driverpath = './chromedriver/chromedriver'
         # 浏览器驱动
         self.driver = webdriver.Chrome(driverpath, options=options, desired_capabilities=des)# 运行本地chrome
-        # self.driver = webdriver.Remote(command_executor="http://10.224.2.98:4444/wd/hub", desired_capabilities=des,options=options)# 运行远程chrome
+        '''
+        # 全局等待
         implicitly_wait = 60000
         self.driver.implicitly_wait(implicitly_wait)
         
