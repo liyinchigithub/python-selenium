@@ -78,6 +78,9 @@ pytest -s -q --alluredir ./report
 allure generate ./report -o ./report/html
 ```
 
+# 测试页面
+>http://sahitest.com/demo/index.htm
+
 # selenium常用方法和属性
 
 * 实例化

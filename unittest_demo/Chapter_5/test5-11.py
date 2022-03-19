@@ -4,7 +4,7 @@ from time import sleep
 driver = webdriver.Chrome()
 driver.get('http://sahitest.com/demo/index.htm')
 print(driver.current_window_handle)  # 查看当前window handle
-driver.find_element_by_link_text('Window Open Test').click()  # 打开新window1
+driver.find_element_by_link_text('Window Open Test').click()  # 打开新window1 html 链接元素 <a>xxxx</a> 文字全匹配
 print(driver.window_handles)  # 查看所有window handles
 sleep(2)
 driver.close()
