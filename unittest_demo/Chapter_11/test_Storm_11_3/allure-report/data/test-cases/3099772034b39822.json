@@ -1,0 +1,87 @@
+{
+  "uid" : "3099772034b39822",
+  "name" : "test_1_2",
+  "fullName" : "test_1_storm.TestDemo#test_1_2",
+  "historyId" : "5bc2d5ae03eb756501c7214891cc06db",
+  "time" : {
+    "start" : 1589641498130,
+    "stop" : 1589641498130,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "用例2:重要步骤",
+      "time" : {
+        "start" : 1589641498130,
+        "stop" : 1589641498130,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "story",
+    "value" : "测试用例1-2"
+  }, {
+    "name" : "feature",
+    "value" : "测试场景1"
+  }, {
+    "name" : "suite",
+    "value" : "test_1_storm"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestDemo"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2VF9P2M"
+  }, {
+    "name" : "thread",
+    "value" : "6624-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_1_storm"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3099772034b39822.json",
+  "parameterValues" : [ ]
+}

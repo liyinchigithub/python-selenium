@@ -1,0 +1,64 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Test.TestCase",
+    "children" : [ {
+      "name" : "test_01_login",
+      "children" : [ {
+        "name" : "TestLogin",
+        "children" : [ {
+          "name" : "test_001_login[admin-error-0]",
+          "uid" : "33131367eb4ad36a",
+          "parentUid" : "d50b25bbedff71fbaa376883dd0d1049",
+          "status" : "passed",
+          "time" : {
+            "start" : 1591970075088,
+            "stop" : 1591970076344,
+            "duration" : 1256
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'error'", "'0'", "'admin'" ]
+        }, {
+          "name" : "test_001_login[admin-rootroot-1]",
+          "uid" : "a1602d6f5834b7a4",
+          "parentUid" : "d50b25bbedff71fbaa376883dd0d1049",
+          "status" : "passed",
+          "time" : {
+            "start" : 1591970084114,
+            "stop" : 1591970085295,
+            "duration" : 1181
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'rootroot'", "'1'", "'admin'" ]
+        } ],
+        "uid" : "d50b25bbedff71fbaa376883dd0d1049"
+      } ],
+      "uid" : "e1e71d8214d29c8f870dcfbae04a22e2"
+    }, {
+      "name" : "test_02_new_project",
+      "children" : [ {
+        "name" : "TestNewProject",
+        "children" : [ {
+          "name" : "test_new_project",
+          "uid" : "6c9b7c2c61914163",
+          "parentUid" : "95354e35fbbf865c8b1ce9eb68669013",
+          "status" : "passed",
+          "time" : {
+            "start" : 1591970094009,
+            "stop" : 1591970095705,
+            "duration" : 1696
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "95354e35fbbf865c8b1ce9eb68669013"
+      } ],
+      "uid" : "51185d08b082eb9a7d968b2d0974f40c"
+    } ],
+    "uid" : "42e85555721eb07be8938e290431fb28"
+  } ]
+}

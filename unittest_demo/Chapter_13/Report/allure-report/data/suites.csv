@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Jun 12 21:54:44 CST 2020","Fri Jun 12 21:54:45 CST 2020","1181","Test.TestCase","test_01_login","TestLogin","","","test_001_login[admin-rootroot-1]",""
+"passed","Fri Jun 12 21:54:35 CST 2020","Fri Jun 12 21:54:36 CST 2020","1256","Test.TestCase","test_01_login","TestLogin","","","test_001_login[admin-error-0]",""
+"passed","Fri Jun 12 21:54:54 CST 2020","Fri Jun 12 21:54:55 CST 2020","1696","Test.TestCase","test_02_new_project","TestNewProject","","","test_new_project",""

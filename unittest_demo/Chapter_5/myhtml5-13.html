@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>判断元素是否可见</title>
+    <script type="text/javascript">
+        function showAndHidden1() {
+            var div1 = document.getElementById("div1");
+            var div2 = document.getElementById("div2");
+            if (div1.style.display == 'block') div1.style.display='none';
+            else div1.style.display = 'block';
+            if (div2.style.display == 'block') div2.style.display='none';
+            else div2.style.display = 'block';
+        }
+        function showAndHidden2() {
+            var div3 = document.getElementById("div3");
+            var div4 = document.getElementById("div4");
+            if (div3.style.visibility == 'visible') div3.style.visibility='hidden';
+            else div3.style.visibility = 'visible';
+            if (div4.style.visibility == 'visible') div4.style.visibility='hidden';
+            else div4.style.visibility = 'visible';
+        }
+    </script>
+</head>
+<body>
+    <div>display:元素不占用页面位置</div>
+    <div id="div1" style="display:block">DIV 1</div>
+    <div id="div2" style="display:none">DIV 2</div>
+    <input id="button1" type="button" onclick="showAndHidden1();" value="DIV切换"/>
+    <hr>
+    <div>display:元素占用页面位置</div>
+    <div id="div3" style="visibility: visible;">DIV 3</div>
+    <div id="div4" style="visibility: hidden;">DIV 4</div>
+    <input id="button2" type="button" onclick="showAndHidden2();" value="DIV切换"/>
+</body>
+</html>

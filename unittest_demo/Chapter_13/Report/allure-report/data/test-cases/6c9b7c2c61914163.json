@@ -1,0 +1,56 @@
+{
+  "uid" : "6c9b7c2c61914163",
+  "name" : "test_new_project",
+  "fullName" : "Test.TestCase.test_02_new_project.TestNewProject#test_new_project",
+  "historyId" : "55f5192c580a48539d3168e8c872eef1",
+  "time" : {
+    "start" : 1591970094009,
+    "stop" : 1591970095705,
+    "duration" : 1696
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Test.TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_02_new_project"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestNewProject"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2VF9P2M"
+  }, {
+    "name" : "thread",
+    "value" : "21044-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Test.TestCase.test_02_new_project"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6c9b7c2c61914163.json",
+  "parameterValues" : [ ]
+}

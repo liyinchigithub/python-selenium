@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>操作iframe</title>
+</head>
+<body>
+<h2>IFRAME Tests</h2>
+<iframe id="iframe1" name="name1" src="https://www.baidu.com/" height="300px" style="float:left;margin:20px;">
+</iframe>
+<div id="another" style="float:left;margin:20px;">
+</div>
+
+<script>
+function writeAnotherIframe(){
+	document.getElementById("another").innerHTML = '<iframe src="https://www.baidu.com/" height="300px"></iframe>';
+}
+window.setTimeout("writeAnotherIframe()", 1000)
+</script>
+</body>
+</html>

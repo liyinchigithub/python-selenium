@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Sat May 16 23:04:58 CST 2020","Sat May 16 23:04:58 CST 2020","0","","test_2_storm","TestDemo","","","test_2_1","
+        用例描述：这是第一条用例的描述
+        "
+"passed","Sat May 16 23:04:58 CST 2020","Sat May 16 23:04:58 CST 2020","1","","test_2_storm","TestDemo","","","test_2_2",""
+"passed","Sat May 16 23:04:58 CST 2020","Sat May 16 23:04:58 CST 2020","0","","test_1_storm","TestDemo","","","test_1_2",""
+"passed","Sat May 16 23:04:58 CST 2020","Sat May 16 23:04:58 CST 2020","0","","test_1_storm","TestDemo","","","test_1_1",""

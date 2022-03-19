@@ -1,0 +1,65 @@
+{
+  "uid" : "a1602d6f5834b7a4",
+  "name" : "test_001_login[admin-rootroot-1]",
+  "fullName" : "Test.TestCase.test_01_login.TestLogin#test_001_login",
+  "historyId" : "51bdd985467c92ac035d9ca8f77e4a62",
+  "time" : {
+    "start" : 1591970084114,
+    "stop" : 1591970085295,
+    "duration" : 1181
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Test.TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_01_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2VF9P2M"
+  }, {
+    "name" : "thread",
+    "value" : "21044-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Test.TestCase.test_01_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "password",
+    "value" : "'rootroot'"
+  }, {
+    "name" : "status",
+    "value" : "'1'"
+  }, {
+    "name" : "username",
+    "value" : "'admin'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a1602d6f5834b7a4.json",
+  "parameterValues" : [ "'rootroot'", "'1'", "'admin'" ]
+}

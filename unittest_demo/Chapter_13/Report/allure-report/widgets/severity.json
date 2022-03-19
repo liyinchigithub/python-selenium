@@ -1,0 +1,31 @@
+[ {
+  "uid" : "6c9b7c2c61914163",
+  "name" : "test_new_project",
+  "time" : {
+    "start" : 1591970094009,
+    "stop" : 1591970095705,
+    "duration" : 1696
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "33131367eb4ad36a",
+  "name" : "test_001_login[admin-error-0]",
+  "time" : {
+    "start" : 1591970075088,
+    "stop" : 1591970076344,
+    "duration" : 1256
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a1602d6f5834b7a4",
+  "name" : "test_001_login[admin-rootroot-1]",
+  "time" : {
+    "start" : 1591970084114,
+    "stop" : 1591970085295,
+    "duration" : 1181
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

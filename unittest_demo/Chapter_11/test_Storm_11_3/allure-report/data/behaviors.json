@@ -1,0 +1,81 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "测试场景1",
+    "children" : [ {
+      "name" : "测试用例1-1",
+      "children" : [ {
+        "name" : "test_1_1",
+        "uid" : "e71f89516584448b",
+        "parentUid" : "707a37d65e38e4b018ad0ff7af5e25b6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589641498126,
+          "stop" : 1589641498126,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "707a37d65e38e4b018ad0ff7af5e25b6"
+    }, {
+      "name" : "测试用例1-2",
+      "children" : [ {
+        "name" : "test_1_2",
+        "uid" : "3099772034b39822",
+        "parentUid" : "c56d7ea6b03ce016dac1e13e5e6c4686",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589641498130,
+          "stop" : 1589641498130,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c56d7ea6b03ce016dac1e13e5e6c4686"
+    } ],
+    "uid" : "c884d36134618d40c442827c388de389"
+  }, {
+    "name" : "测试场景2",
+    "children" : [ {
+      "name" : "测试用例2-1",
+      "children" : [ {
+        "name" : "test_2_1",
+        "uid" : "4d01d15ec287c169",
+        "parentUid" : "7260da1f974f2e9c3c68fe8f475fba48",
+        "status" : "failed",
+        "time" : {
+          "start" : 1589641498135,
+          "stop" : 1589641498135,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7260da1f974f2e9c3c68fe8f475fba48"
+    }, {
+      "name" : "测试用例2-2",
+      "children" : [ {
+        "name" : "test_2_2",
+        "uid" : "3a9ccda607999fb0",
+        "parentUid" : "ad86e7effd4f2a288282dea59dded1af",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589641498184,
+          "stop" : 1589641498185,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ad86e7effd4f2a288282dea59dded1af"
+    } ],
+    "uid" : "ba4d33da07ad649384efc54183603b96"
+  } ]
+}

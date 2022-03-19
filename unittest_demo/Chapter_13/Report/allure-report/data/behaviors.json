@@ -1,0 +1,44 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "test_001_login[admin-error-0]",
+    "uid" : "33131367eb4ad36a",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1591970075088,
+      "stop" : 1591970076344,
+      "duration" : 1256
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "'error'", "'0'", "'admin'" ]
+  }, {
+    "name" : "test_001_login[admin-rootroot-1]",
+    "uid" : "a1602d6f5834b7a4",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1591970084114,
+      "stop" : 1591970085295,
+      "duration" : 1181
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "'rootroot'", "'1'", "'admin'" ]
+  }, {
+    "name" : "test_new_project",
+    "uid" : "6c9b7c2c61914163",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1591970094009,
+      "stop" : 1591970095705,
+      "duration" : 1696
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  } ]
+}

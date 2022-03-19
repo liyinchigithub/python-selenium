@@ -11,6 +11,8 @@
 * ----__init__.py         模块初始化
 * ----test_selenium.py    模块
 * -download_file          下载文件存放路径，通过chromeOptions capability设置
+* -unittest_demo          unittest selenium 示例代码
+* -allure-2.17.2          allure报告
 * -save_images            webdriver 截图保存图片路径
 * -webdriver_init.py      webdriver 初始化(本地、远程、chromeoptions参数配置)
 * -logging_init.py        logging 初始化(日志初始化配置，每次触发写入本地文件和控制台)
