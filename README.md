@@ -199,19 +199,39 @@ driver.set_script_timeout(10)# 10秒
 
 # selenium元素定位方法
 
-* 
+8种单个元素定位方式，如果找到多个默认第一个
 ```python
-driver.
+driver.find_element_by_id()
+driver.find_element_by_name()
+driver.find_element_by_class_name()
+driver.find_element_by_tag_name() # html <input> 即tag name为input
+driver.find_element_by_link_text() # html <a>新闻</a> 文字全匹配
+driver.find_element_by_partial_link_text()# html <a>新闻</a> 文字部分匹配
+driver.find_element_by_xpath()
+driver.find_element_by_css_selector() # F12 元素复制 cssSelector
 ```
 
-* 
+8中多个元素定位方式，返回一个列表，通过切片、索引来使用元素
+
 ```python
-driver.
+driver.find_elements_by_id()
+driver.find_elements_by_name()
+driver.find_elements_by_class_name()
+driver.find_elements_by_tag_name()
+driver.find_elements_by_link_text()
+driver.find_elements_by_partial_link_text()
+driver.find_elements_by_xpath()
+driver.find_elements_by_css_selector() # F12 元素复制 cssSelector
 ```
 
-* 
+* find_element
 ```python
-driver.
+driver.find_element(By.ID,"").send_keys("")
+driver.find_element(By.NAME,"").send_keys("")
+driver.find_element(By.ID,"").send_keys("")
+driver.find_element(By.ID,"").send_keys("")
+driver.find_element(By.ID,"").send_keys("")
+driver.find_element(By.ID,"").send_keys("")
 ```
 
 * 
