@@ -234,6 +234,8 @@ driver.find_element(By.ID,"").send_keys("")
 driver.find_element(By.ID,"").send_keys("")
 ```
 
+
+
 * xpath几种格式
 
 1.第一种格式：
@@ -268,43 +270,136 @@ driver.find_element(By.ID,"").send_keys("")
 //iframe[contains(@src,“http://vrmstest2.maimaiche.com/ucvrms/repair/maintenance/list.do_;jsessionid=a11e054a-953a-457b-b294-35a10753d0e8?isInit=true“)]
 ```
 
-* 
+
+
+* 获取html标签元素内容
 ```python
-driver.
+driver.find_element_by_id(('div').text
 ```
 
-* 
+* 复选框-判断是否选中状态（checkbox）
 ```python
-driver.
+driver.find_element_by_tag_name('id_01').is_selected()
 ```
 
-* 
+* 串联查询（在已找到元素层级基础上在继续往下查找）
 ```python
-driver.
+driver.find_element_by_id('B').find_element_by_tag_name('div').text
 ```
 
-* 
+* 通过父元素定位子元素
 ```python
-driver.
+driver.find_element_by_xpath("//div[@id='B']/div").text
 ```
 
-* 
+* 通过子元素定位父元素
 ```python
-driver.
+# `.`代表当前节点; '..'代表父节点
+mytext = driver.find_element_by_xpath("//div[@id='C']/../..").text
+```
+
+* xpath轴 （myhtml5-3.html）
+```python
+mytext1 = driver.find_element_by_xpath("//div[@id='C']/parent::div/parent::div").text
+```
+
+
+* 弟弟元素定位哥哥元素
+```python
+driver.find_element_by_xpath("//div[@id='D']/preceding-sibling::div[1]").text
 ```
 
 # 获取元素信息
 
-* 
+* 获取元素属性
 ```python
-driver.
+driver.find_element_by_id('kw').get_attribute('id')  #打印搜索按钮的id属性
 ```
+
+* 获取元素标签
+```python
+driver.find_element_by_id('kw').tag_name
+```
+
+* 获取元素文本
+```python
+driver.find_element_by_id('kw').text
+```
+
+
+* 获取元素大小
+```python
+driver.find_element_by_id('kw').size
+```
+
+* 获取CSS属性值
+```python
+driver.value_of_css_property("height")
+```
+
+
+* 判断页面元素是否可见
+
+有时候找能找到元素，但是页面不显示，导致脚本报错
+```python
+driver.find_element_by_id('kw').is_displayed()
+```
+
+* 判断页面元素是否可用
+
+有时候找能找到元素，元素置灰不可点击，需要先判断是否可用，比如html元素加了属性disable 或者 元素被遮挡
+```python
+driver.find_element_by_id('kw').is_enabled()
+```
+* 判断页面元素是否被选中
+
+单选框、多选框
+```python
+driver.find_element_by_id('kw').is_selected()
+```
+
 
 # 鼠标操作
 
-* 
+需要先引入鼠标操作包
+
 ```python
-driver.
+from selenium.webdriver.common.action_chains import ActionChains
+```
+
+* 鼠标单击元素（左）
+```python
+ActionChains(driver).click(元素).perform() # 传递driver ActionChains(driver)；动作 click(元素)；执行 perform()
+```
+
+* 鼠标双击元素（左）
+```python
+ActionChains(driver).double_click(元素).perform() # 传递driver ActionChains(driver)；动作 click(元素)；执行 perform()
+```
+
+* 鼠标右击元素
+```python
+ActionChains(driver).context_click(元素).perform() # 传递driver ActionChains(driver)；动作 context_click(元素)；执行 perform()
+```
+
+* 鼠标悬浮
+```python
+ActionChains(driver).move_to_element(元素).perform() # 传递driver ActionChains(driver)；动作 move_to_element(元素)；执行 perform()
+```
+
+* 鼠标拖动
+```python
+ActionChains(driver).drag_and_drop(起点元素,终点元素).perform() # 传递driver ActionChains(driver)；动作 drag_and_drop(元素)；执行 perform()
+```
+
+* 鼠标
+```python
+ActionChains(driver).click(元素).perform() # 传递driver ActionChains(driver)；动作 click(元素)；执行 perform()
+```
+
+* 鼠标
+```python
+ActionChains(driver).click(元素).perform() # 传递driver ActionChains(driver)；动作 click(元素)；执行 perform()
 ```
 
 
@@ -316,7 +411,19 @@ driver.
 ```
 
 
-# 表单控件
+# 控件实操
+
+## 搜索框
+* 
+```python
+driver.
+```
+
+## 按钮
+* 
+```python
+driver.
+```
 
 ## 复选框
 * 
