@@ -234,9 +234,38 @@ driver.find_element(By.ID,"").send_keys("")
 driver.find_element(By.ID,"").send_keys("")
 ```
 
-* 
-```python
-driver.
+* xpath几种格式
+
+1.第一种格式：
+![image](https://user-images.githubusercontent.com/19643260/159109014-4caff4ca-3d61-46e5-ae5f-2a5f167bbc1d.png)
+
+.//标签[@属性名='属性值']
+
+```xpath
+.//span[@title='custom_link']
+```
+![image](https://user-images.githubusercontent.com/19643260/159109047-2a7fc2ab-432e-480f-a4f4-7c00c289bc41.png)
+
+2.第二种格式：
+![image](https://user-images.githubusercontent.com/19643260/159109062-6bf34e0e-eca2-43b1-a5f6-5ef8786aed06.png)
+
+.//标签[contains(text(),"标签内容")]
+
+```xpath
+./span[contains(text(),"确定")]
+```
+
+注意：移动端 使用chrome://inspect/#devices工具定位H5元素，仅能使用第一种格式(.//标签[@属性="属性值"])，不能使用第二种(.//标签[contains(text(),"标签内容")])
+
+![image](https://user-images.githubusercontent.com/19643260/159109070-72479a0e-286c-4466-8082-cb30b3fe8bad.png)
+
+3.第三种格式：
+![image](https://user-images.githubusercontent.com/19643260/159109075-73d21dcd-1204-48ed-92bf-eb97663b8d57.png)
+
+.//标签名[contains(@属性名,'属性值')]
+
+```xpath
+//iframe[contains(@src,“http://vrmstest2.maimaiche.com/ucvrms/repair/maintenance/list.do_;jsessionid=a11e054a-953a-457b-b294-35a10753d0e8?isInit=true“)]
 ```
 
 * 
