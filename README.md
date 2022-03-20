@@ -270,8 +270,6 @@ driver.find_element(By.ID,"").send_keys("")
 //iframe[contains(@src,“http://vrmstest2.maimaiche.com/ucvrms/repair/maintenance/list.do_;jsessionid=a11e054a-953a-457b-b294-35a10753d0e8?isInit=true“)]
 ```
 
-
-
 * 获取html标签元素内容
 ```python
 driver.find_element_by_id(('div').text
@@ -392,24 +390,23 @@ ActionChains(driver).move_to_element(元素).perform() # 传递driver ActionChai
 ActionChains(driver).drag_and_drop(起点元素,终点元素).perform() # 传递driver ActionChains(driver)；动作 drag_and_drop(元素)；执行 perform()
 ```
 
-* 鼠标
-```python
-ActionChains(driver).click(元素).perform() # 传递driver ActionChains(driver)；动作 click(元素)；执行 perform()
-```
-
-* 鼠标
-```python
-ActionChains(driver).click(元素).perform() # 传递driver ActionChains(driver)；动作 click(元素)；执行 perform()
-```
-
 
 # 按键操作
 
-* 
+* 文字输入
 ```python
-driver.
+driver.find_element_by_id('bordercheck').send_keys("输入点东西")
 ```
 
+* 
+```python
+
+```
+
+* 
+```python
+
+```
 
 # 控件实操
 
@@ -462,10 +459,44 @@ driver.
 ```
 
 ## JavaScript 弹窗
-* 
+
+1.警告类弹alert()        显示警告或其他信息，用于通知用户。   上方有【文本框】，下方只有一个【确认】按钮。
+2.确认类弹窗confirm()    询问是否继续某种操作等功能。         上方有【文本框】，下方有【确认】和【取消】两种按钮。
+3.消息类弹窗prompt()     需要输入一些信息。                 上方【文字信息】、【文本框】，下方会有【确认】和【取消】按扭
+
+在 WebDriver 中处理 JavaScript 所生成的 alert、confirm 以及 prompt 是很简单的。
+
+具体做法是使用switch_to_alert()方法定位到 alert/confirm/prompt。
+
+|名称|	用法|
+|-|-|
+|accept()	                    |   点击Alert的【确认】按钮|
+|authenticate(username,password)|	给需要验证的Alert发送账号和密码，默认点击OK|
+|dismiss() 	                    |   点击Alert的【取消】按钮|
+|send_keys(keysToSend)      	|   在Alert的输入框输入信息|
+|text	                        |   获取Alert上的文言信息|
+|switch_to.alert	            |   切换到Alert然后使用 text/accept/dismiss/send_keys 按需进行操做。|
+
+4中常见操作：获取警告框的text消息、接受消息框(确定)、取消、输入值
+
+* text属性，即返回alert/confirm/prompt 中的文字信息。
+* accept方法，即点击确认按钮。
+* dismiss方法，即点击取消按钮，如果有的话。
+* send_keys方法，即输入值，这个 alert\confirm 没有对话框就不能用了，不然会报错。
+
+
 ```python
-driver.
+# 接受弹窗
+driver.switch_to.alert.accept()
+# 得到弹窗的文本消息,比如得到：请输入用户名！
+driver.switch_to.alert.text
+print(message)
+# 取消按钮
+driver.switch_to.alert.dismiss()
+# 输入值
+driver.switch_to.alert.send_keys("输入内容")
 ```
+
 
 ## 非JavaScript 弹窗
 * 
