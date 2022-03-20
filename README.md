@@ -414,7 +414,13 @@ import selenium.webdriver.common.action_chains import ActionChains;
 
 ActionChains(driver).key_down(Keys.CONTROL).perform()
 
+```
 
+（3）空格键
+
+可用于复选框选中 checkbox
+```python
+driver.find_element_by_id("checkbox").send_keys(Keys.SPACE)
 ```
 
 # 控件实操
@@ -422,37 +428,69 @@ ActionChains(driver).key_down(Keys.CONTROL).perform()
 ## 搜索框
 * 
 ```python
-driver.
+driver.send_keys("输入的内容") # 输入文字
+driver.clear() # 清除文字
+driver.get_property("value") # 获取输入框的内容
+driver.find_element_by_id("").attribute('name') # 获取元素属性
+driver.find_element_by_id("").tag_name; # 获取元素tag name
 ```
 
 ## 按钮
 * 
 ```python
-driver.
+driver.find_element_by_id("").click() # button
+driver.find_element_by_id("").submit() # button
+driver.find_element_by_xpath(".//input[@type='radio']").is_selected() # radio 是否被选中  input type 为radio
 ```
 
 ## 复选框
-* 
+
+实用空格键选中复选框、使用鼠标点击选中复选框
 ```python
-driver.
+driver.find_element_by_id("checkbox").send_keys(Keys.SPACE)
+driver.find_element_by_id("").click() # button
+```
+
+选中一组复选框（全选复选框）
+```python
+eles=driver.find_elements_by_xpath(".//input[@type='checkbox']") # 找到所有复选框
+# 遍历点击
+for ele in eles:
+    ele.click()
 ```
 
 ## 链接
 * 
 ```python
-driver.
+driver.find_element_by_xpath(".//a[@type='link']").text
 ```
 
 ## select下拉列表
-* 
+* select 元素、option子元素
 ```python
-driver.
+# 两种方式
+form selenium.webdriver.support.ui import Select
+form selenium.webdriver.support.select import Select
+
+# 3种选择方法
+# 4种取消方法
+# 3种属性，用于获取下拉列表选项
+# 1种属性，判断是否可多选
+
 ```
 
 ## input下拉列表
 * 
 ```python
-driver.
+from selenium.webdriver.common.action_chains import ActionsChains
+from time import sleep
+# 假设可输入，先输入后自动展开下拉列表，按键盘方向键向下，再按键盘回车键
+driver.find_element_by_id('select').send_keys(b)
+sleep(3)
+driver.find_element_by_id('select').send_keys(Key.ARROW_DOWN)
+sleep(3)
+driver.find_element_by_id('select').send_keys(Key.ENTER)
+
 ```
 
 ## 表格
