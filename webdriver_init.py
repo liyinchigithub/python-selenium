@@ -46,15 +46,18 @@ class DriverConfig:
         # 获取谷歌浏览器所有控制台信息
         des = DesiredCapabilities.CHROME
         des['loggingPrefs'] = {'performance': 'ALL'}
+        
         # 浏览器驱动（使用自动更新下载chromedriver）
         self.driver =webdriver.Chrome(ChromeDriverManager().install(
         ), options=options, desired_capabilities=options.to_capabilities())
+        
         # 浏览器驱动（使用远程机器）
         # self.driver = webdriver.Remote(command_executor="http://10.224.2.98:4444/wd/hub", desired_capabilities=des,options=options)
+        
         # 浏览器驱动（使用本地手动下载chromedriver）
         '''
-        # 谷歌浏览器驱动路径
-        if(platform.system()=='Windows'): # 判断当前系统
+        # 判断当前系统
+        if(platform.system()=='Windows'):
             driverpath = './chromedriver/chromedriver.exe'
         else:    
             driverpath = './chromedriver/chromedriver'

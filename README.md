@@ -398,13 +398,22 @@ ActionChains(driver).drag_and_drop(起点元素,终点元素).perform() # 传递
 driver.find_element_by_id('bordercheck').send_keys("输入点东西")
 ```
 
-* 
+* 组合键
+（1）ctrl+c/a/v
 ```python
-
+import selenium.webdriver.common.keys import Keys;
+driver.find_element_by_id("").send_keys(Keys.CONTROL,'a')
+driver.find_element_by_id("").send_keys(Keys.CONTROL,'c')
+driver.find_element_by_id("").send_keys(Keys.CONTROL,'v')
 ```
 
-* 
+（2）按住ctrl键
 ```python
+import selenium.webdriver.common.keys import Keys;
+import selenium.webdriver.common.action_chains import ActionChains;
+
+ActionChains(driver).key_down(Keys.CONTROL).perform()
+
 
 ```
 
@@ -500,9 +509,7 @@ driver.switch_to.alert.send_keys("输入内容")
 
 ## 非JavaScript 弹窗
 * 
-```python
-driver.
-```
+当做正常元素去处理
 
 ## 文件下载
 * 
@@ -511,7 +518,8 @@ driver.
 ```
 
 ## 文件上传
-* 
+* file类型
+
 ```python
 driver.
 ```
