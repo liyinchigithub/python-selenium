@@ -390,6 +390,15 @@ ActionChains(driver).move_to_element(元素).perform() # 传递driver ActionChai
 ActionChains(driver).drag_and_drop(起点元素,终点元素).perform() # 传递driver ActionChains(driver)；动作 drag_and_drop(元素)；执行 perform()
 ```
 
+* 模拟鼠标的悬浮动作
+```python
+driver.get("http://sahitest.com/demo/mouseover.htm")
+ele = driver.find_element_by_xpath('/html/body/form/input[1]')
+sleep(2)
+# 通过move_to_element()来模拟鼠标的悬浮动作
+ActionChains(driver).move_to_element(ele).perform()
+ActionChains(driver).key_up()
+```
 
 # 按键操作
 
