@@ -505,13 +505,33 @@ driver.find_element_by_id('select').send_keys(Key.ENTER)
 ## 表格
 * 
 ```python
-driver.
+    driver.get("http://sahitest.com/demo/tableTest.htm")
+    table = driver.find_element_by_id('t2')
+    rows = table.find_elements_by_tag_name('tr')# 基于表格父节点，查找地址下子节点tag_name为tr的元素
+    cols = rows[0].find_elements_by_tag_name('td')# 查找地址下子节点tag_name为td的元素
+    for i in range(len(rows)):
+        for j in range(len(cols)):
+            cell = rows[i].find_elements_by_tag_name('td')[j]
+            print(cell.text)
 ```
 
 ## frame 框架
-* 
+* frame 用于全页面
 ```python
 driver.
+```
+
+* iframe 只用于局部页面
+```python
+driver.switch_to.frame("iframe属性id")
+driver.switch_to.frame("iframe属性name")
+driver.switch_to.frame(0)
+driver.switch_to.frame(iframe_element)
+
+# 切换回主页面
+driver.switch_to.default_content()
+# 切回上一级页面
+driver.switch_to.parent_frame()
 ```
 
 ## JavaScript 弹窗

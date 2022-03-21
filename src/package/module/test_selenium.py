@@ -6,10 +6,12 @@
 # https://selenium-python-zh.readthedocs.io/en/latest/locating-elements.html
 
 import requests  # http客户端模块
-import time  # 日期时间模块
+import time,os  # 日期时间模块
 import pytest  # 单元测试模块
 from selenium import webdriver
 from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.support.ui import Select
+from selenium.webdriver.common.keys import Keys
 # from webdriver_init import * # 导入封装selenium初始化自定义模块
 # from logging_init import * # 导入封装logging初始化自定义模块
 import logging  # 日志模块
@@ -99,7 +101,7 @@ def teardown_method():
 
 
 def teardown_module():
-    driver.close()
+    driver.quit()
     logger.info("teardown_module():每个模块（文件）之后执行")
 
 
@@ -202,6 +204,7 @@ def test_text_input():
 '''
     弹窗Alert
 '''
+@pytest.mark.skip
 @pytest.mark.test
 @pytest.mark.smoke
 def test_alert():
@@ -238,6 +241,58 @@ def test_alert():
     driver.switch_to.alert.accept()# 切换至弹窗并输入内容，点击【确定】按钮
     time.sleep(1)
     
+    
+'''
+    select 下拉列表
+'''
+@pytest.mark.skip
+@pytest.mark.test
+@pytest.mark.smoke
+def test_select():
+    # select
+    driver.get("http://sahitest.com/demo/selectTest.htm")
+    s1 = Select(driver.find_element_by_id('s1Id'))  # 实例化Select
+    time.sleep(2)
+    s1.select_by_index(1)  # 通过index，选择第二项选项：o1
+    time.sleep(2)
+    s1.select_by_value("o2")  # 通过value值，选择value="o2"的项
+    time.sleep(2)
+    s1.select_by_visible_text("o3")  # 通过可见text，选择text="o3"的值，即在下拉时我们可以看到的文本
+    time.sleep(2)
+    
+    s1.deselect_by_index(0)# 根据选项索引位置取消
+    s1.deselect_by_value("o2")# 根据选项value属性值取消选择
+    s1.deselect_by_visible_text("o3")# 根据选项可见文本取消选择
+    s1.deselect_all()#  取消全选
+    
+    if s1.is_multiple:
+        print("可多选")
+    else:
+        print("不可多选")
+    
+    # input 下拉列表
+    driver.find_element_by_id('select').send_keys("b")
+    time.sleep(3)
+    driver.find_element_by_id('select').send_keys(Key.ARROW_DOWN)
+    time.sleep(3)
+    driver.find_element_by_id('select').send_keys(Key.ENTER)
+    
+    
+'''
+    表格（遍历获取表格每个单元格的值）
+'''
+@pytest.mark.skip
+@pytest.mark.test
+@pytest.mark.smoke
+def test_table():
+    driver.get("http://sahitest.com/demo/tableTest.htm")
+    table = driver.find_element_by_id('t2')
+    rows = table.find_elements_by_tag_name('tr')# 基于表格父节点，查找地址下子节点tag_name为tr的元素
+    cols = rows[0].find_elements_by_tag_name('td')# 查找地址下子节点tag_name为td的元素
+    for i in range(len(rows)):
+        for j in range(len(cols)):
+            cell = rows[i].find_elements_by_tag_name('td')[j]
+            print(cell.text)
     
 '''
     文件下载

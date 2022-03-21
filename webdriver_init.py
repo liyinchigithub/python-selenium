@@ -35,7 +35,7 @@ class DriverConfig:
         # 浏览器全屏
         options.add_argument('start-fullscreen')
         # 无头模式
-        options.add_argument('--headless')
+        # options.add_argument('--headless')
         options.add_argument('--no-sandbox')# 解决DevToolsActivePort文件不存在的报错
         options.add_argument('window-size=1920x3000')  # 指定浏览器分辨率
         options.add_argument('--disable-gpu')# 谷歌文档提到需要加上这个属性来规避bug
