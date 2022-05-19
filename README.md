@@ -22,9 +22,35 @@
 
 ## 安装依赖
 
+### 创建虚拟目录
+
 ```shell
-pip install requirement.txt
+# python -m venv 虚拟环境名称，名称是随意起的
+python -m venv tutorial-env
 ```
+### 激活虚拟环境
+当激活虚拟环境时命令行上会有个虚拟环境名前缀。
+
+#### Unix或MacOS上激活虚拟环境
+```shell
+source tutorial-env/bin/activate
+```
+#### windows上激活虚拟环境
+```shell
+tutorial-env\Scripts\activate.bat
+```
+
+####  安装requirement.txt依赖
+```shell
+pip install -r requirements.txt
+```
+#### （可选）如果有新的依赖引入，冻结第三方库，就是将所有第三方库及版本号保存到requirements.txt文本文件中
+```shell
+pip freeze > requirements.txt
+```
+
+
+
 
 ## 运行所有用例脚本
 ```shell
